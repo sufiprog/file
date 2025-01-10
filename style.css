@@ -7,6 +7,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* My baiscc styles */
+
 body {
     overflow-x: hidden;
 }
@@ -30,6 +32,8 @@ ul {
     bottom: -8px;
     right: 1px;
 }
+
+/* Navigation */
 
 .topbar {
     display: flex;
@@ -67,7 +71,9 @@ ul {
     margin-right: 5px;
 }
 
-main .hero {
+/* Hero Section */
+
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,7 +128,9 @@ main .hero {
     box-shadow: 70px 70px 0 #b31414;
 }
 
-.review {
+/* Review Section */
+
+.review{
     margin: 6rem 0;
     background: #f5f5f5;
     position: relative;
@@ -207,6 +215,9 @@ main .hero {
     right: 0;
     bottom: 0;
 }
+
+/* New Section */
+
 
 .news-section {
     margin: 120px 100px;
@@ -327,7 +338,7 @@ main .hero {
     background: #b01528;
   }
 
-  /* Admission Section */
+  /* Admission */
 
   .admission-container {
     padding: 0 60px;
@@ -426,6 +437,8 @@ main .hero {
     object-fit: cover;
   }
 
+  /* Gallery */
+
   .gallery {
     max-width: 1200px;
     margin: 0 auto;
@@ -462,20 +475,19 @@ main .hero {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 50px; /* Increase width slightly to make the icon fit better */
-    height: 50px; /* Increase height slightly */
-    background: rgba(255, 255, 255, 0.8); /* Adjust background transparency */
+    width: 50px; 
+    height: 50px; 
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    padding: 5px; /* Decrease padding to fit within the container */
+    padding: 5px; 
     z-index: 2;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease
 }
 
-.watermark i {
+.watermark i{
     color: #000;
-    font-size: 25px; /* Increase font size to fit the watermark better */;
+    font-size: 25px; 
 }
-
 .overlay {
     position: absolute;
     inset: 0;
@@ -523,7 +535,7 @@ main .hero {
     transform: translateY(0);
 }
 
-
+/* Footer  */
 
 footer {
   background-color: #4B4F54;
@@ -561,7 +573,7 @@ footer {
   gap: 10px;
 }
 
-.footer-content ul li {
+.footer-content ul li{
   margin-bottom: 10px;
   text-align: start;
 }
@@ -605,7 +617,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.bottom-bar p {
+.bottom-bar p{
   margin: 0;
   font-size: 14px;
   
@@ -616,7 +628,6 @@ footer {
   display: flex;
   gap: 20px;
 }
-
 .bottom-bar ul li a {
   color: white;
   text-decoration: none;
@@ -628,17 +639,20 @@ footer {
   opacity: 0.8;
 }
 
-/* Mobile styles */
+
+
+
+
+/* Mobile Freisnly  */
 @media only screen and (max-width: 768px) {
 
-  .topbar {
+  .topbar{
       padding: 10px 20px;
   }
 
   .topbar ul li {
       font-size: 10px;
   }
-
   .header {
       padding: 5px 20px;
   }
@@ -647,7 +661,7 @@ footer {
       width: 150px;
   }
 
-  .header ul {
+  .header ul{
       font-size: 12px;
       gap: 15px;
   }
@@ -674,13 +688,13 @@ footer {
 
   .hero .left button {
       font-size: 16px;
-      padding: 8px 16px;
+      padding: 8px 16px
   }
 
-  .hero .right {
+  .hero .right{
       width: 100%;
       margin-top: 20px;
-      text-align: center;
+      text-align: center
   }
 
   .hero .right img {
@@ -689,7 +703,7 @@ footer {
       height: auto;
   }
 
-  .review {
+  .review{
       margin: 3rem 0;
       padding: 2rem;
   }
@@ -711,7 +725,7 @@ footer {
       margin: 20px;
   }
 
-  .news-title {
+  .news-title{
       font-size: 2rem;
   }
 
@@ -736,7 +750,7 @@ footer {
       margin-top: 50px;
   }
 
-  .admission-container .search-area {
+  .admission-container .search-area{
       width: 100%;
       padding: 20px;
   }
@@ -759,14 +773,14 @@ footer {
       font-size: 14px;
   }
 
-  .admission-image {
+  .admission-image{
       width: 100%;
       height: auto;
       position: relative;
       top: 0;
   }
 
-  .gallery {
+  .gallery{
       padding: 1rem;
       grid-template-columns: 1fr;
   }
@@ -793,81 +807,5 @@ footer {
   .footer-content ul {
       flex-direction: column;
       gap: 5px;
-  }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .topbar {
-      padding: 10px 30px;
-  }
-
-  .header {
-      padding: 5px 30px;
-  }
-
-  .hero {
-      flex-direction: column;
-      padding: 30px;
-  }
-
-  .hero .left h1 {
-      font-size: 60px;
-  }
-
-  .hero .left p {
-      font-size: 18px;
-  }
-
-  .hero .right img {
-      width: 90%;
-      max-width: 500px;
-  }
-
-  .review {
-      margin: 4rem 0;
-  }
-
-  .review .info {
-      width: 100%;
-  }
-
-  .news-section {
-      margin: 60px;
-  }
-
-  .news-grid {
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .news-card h2 {
-      font-size: 1.1rem;
-  }
-
-  .admission-container {
-      margin-top: 100px;
-  }
-
-  .admission-container .search-area {
-      width: 80%;
-  }
-
-  .admission {
-      padding: 40px;
-      flex-direction: row;
-  }
-
-  .admission h1 {
-      font-size: 36px;
-  }
-
-  .gallery {
-      padding: 1.5rem;
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-content {
-      grid-template-columns: repeat(2, 1fr);
   }
 }
