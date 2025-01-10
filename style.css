@@ -123,26 +123,751 @@ main .hero {
 }
 
 .review {
-    margin: 150px 60px 100px;
-    background: #dfdbdb;
+    margin: 6rem 0;
+    background: #f5f5f5;
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 1300px;
+    border-radius: 10px;
+    margin: 6rem auto;
 }
 
-.review img{
-    width: 1000px;
+.review img {
+    width: 100%;
+    width: 900px;
+    height: 550px;
+    object-fit: cover;
 }
 
-.review button{
-}
-
-.review .info{
-    background: #be1717;
-    color: #fff;
-    padding: 50px;
-    width: 500px;
+.review .btn {
     position: absolute;
     bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.692);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.review .btn button {
+    background: transparent;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.125rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.review .btn button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.review .info {
+    background: #be1717;
+    color: #fff;
+    padding: 3rem;
+    width: 400px;
+    position: absolute;
+    bottom: -40px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review .info h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.review .sub-heading{
+    color: yellow;
+}
+
+.review .info p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.review .info button{
+    background-color: #fff;
+    color: #b31414;
+    padding: 5px 30px;
+    width: fit-content;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    position: absolute;
     right: 0;
+    bottom: 0;
+}
+
+.news-section {
+    margin: 120px 100px;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .news-title {
+    color: #DC1B37;
+    font-size: 3.5rem;
+    margin: 3rem 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .news-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .news-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .date-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .news-content {
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .tag {
+    color: #DC1B37;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .news-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .news-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .arrow-link {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    color: #DC1B37;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .news-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .news-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .news-item h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .news-item .date {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .view-more {
+    background: #DC1B37;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .view-more:hover {
+    background: #b01528;
+  }
+
+  /* Admission Section */
+
+  .admission-container {
+    padding: 0 60px;
+    margin-top: 200px;
+    position: relative;
+  }
+  
+  .search-area {
+    padding: 40px;
+    background: white;
+    width: 500px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .search h2 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .admission-container{
+    position: relative;
+    padding: auto;
+    margin: 200px 0px 200px 0;
+  }
+  
+  .admission {
+    background: #C8102E;
+    color: white;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content {
+    max-width: 40%;
+  }
+  
+  .admission span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 16px;
+  }
+  
+  .admission h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  
+  .admission p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  
+  .admission button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .admission button:hover {
+    background: white;
+    color: #C8102E;
+  }
+  
+  .admission-image {
+    width: 700px;
+    position: absolute;
+    top: -90px;
+    right: 40px;
+  }
+  
+  .admission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.gallery-container {
+    text-align: center;
+    font-size: 30px;
+    color: #b01528;
+    text-decoration: underline;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 3/2;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Increase width slightly to make the icon fit better */
+    height: 50px; /* Increase height slightly */
+    background: rgba(255, 255, 255, 0.8); /* Adjust background transparency */
+    border-radius: 6px;
+    padding: 5px; /* Decrease padding to fit within the container */
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.watermark i {
+    color: #000;
+    font-size: 25px; /* Increase font size to fit the watermark better */;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, 
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.overlay p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    transform: translateY(20px);
+    transition: transform 0.5s ease 0.1s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover .watermark {
+    opacity: 0.7;
+}
+
+.gallery-item:hover .overlay h3,
+.gallery-item:hover .overlay p {
+    transform: translateY(0);
+}
+
+
+
+footer {
+  background-color: #4B4F54;
+  color: white;
+  padding: 40px 0 0 0;
+  margin: 50px 0 0 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.footer-content div {
+  text-align: left;
+}
+
+.footer-content h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.footer-content ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+  opacity: 0.8;
+}
+
+.social-icons {
+  margin-top: 90px;
+  display: flex;
+  gap: 15px;
+  margin-left: 120px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+.bottom-bar {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #b01528;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottom-bar p {
+  margin: 0;
+  font-size: 14px;
+  
+}
+
+.bottom-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.bottom-bar ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+
+  .topbar {
+      padding: 10px 20px;
+  }
+
+  .topbar ul li {
+      font-size: 10px;
+  }
+
+  .header {
+      padding: 5px 20px;
+  }
+
+  .header img {
+      width: 150px;
+  }
+
+  .header ul {
+      font-size: 12px;
+      gap: 15px;
+  }
+
+  .hero {
+      flex-direction: column;
+      padding: 20px;
+      min-height: 50vh;
+  }
+
+  .hero .left {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+
+  .hero .left h1 {
+      font-size: 40px;
+  }
+
+  .hero .left p {
+      font-size: 16px;
+  }
+
+  .hero .left button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  .hero .right {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .hero .right img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+  }
+
+  .review {
+      margin: 3rem 0;
+      padding: 2rem;
+  }
+
+  .review img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .review .info {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      right: 0;
+  }
+
+  .news-section {
+      margin: 20px;
+  }
+
+  .news-title {
+      font-size: 2rem;
+  }
+
+  .news-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .news-card {
+      width: 100%;
+  }
+
+  .news-card h2 {
+      font-size: 1rem;
+  }
+
+  .news-card p {
+      font-size: 0.8rem;
+  }
+
+  .admission-container {
+      padding: 0 20px;
+      margin-top: 50px;
+  }
+
+  .admission-container .search-area {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .admission {
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  .admission h1 {
+      font-size: 32px;
+  }
+
+  .admission p {
+      font-size: 16px;
+  }
+
+  .admission button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  .admission-image {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+  }
+
+  .gallery {
+      padding: 1rem;
+      grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+      font-size: 20px;
+  }
+
+  .gallery-item {
+      aspect-ratio: 1/1;
+  }
+
+  .footer-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0 20px;
+  }
+
+  .footer-content h3 {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .footer-content ul {
+      flex-direction: column;
+      gap: 5px;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .topbar {
+      padding: 10px 30px;
+  }
+
+  .header {
+      padding: 5px 30px;
+  }
+
+  .hero {
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .hero .left h1 {
+      font-size: 60px;
+  }
+
+  .hero .left p {
+      font-size: 18px;
+  }
+
+  .hero .right img {
+      width: 90%;
+      max-width: 500px;
+  }
+
+  .review {
+      margin: 4rem 0;
+  }
+
+  .review .info {
+      width: 100%;
+  }
+
+  .news-section {
+      margin: 60px;
+  }
+
+  .news-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .news-card h2 {
+      font-size: 1.1rem;
+  }
+
+  .admission-container {
+      margin-top: 100px;
+  }
+
+  .admission-container .search-area {
+      width: 80%;
+  }
+
+  .admission {
+      padding: 40px;
+      flex-direction: row;
+  }
+
+  .admission h1 {
+      font-size: 36px;
+  }
+
+  .gallery {
+      padding: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
