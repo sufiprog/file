@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.bx-chevron-down {
+    color: red;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 70px;
+    height: 1.9px;
+    bottom: -8px;
+    right: 1px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 40px 7px;
+}
+
+.topbar ul li {
+    margin-left: 20px;
+    font-size: 12px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px 6px;
+    border: 1px solid #dddddd;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header ul {
+    font-size: 14px;
+    gap: 20px;
+}
+
+.header .menu-icons i {
+    font-size: 20px;
+    color: gray;
+    margin-right: 5px;
+}
+
+main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+    width: 100%;
+    padding: 50px;
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .left {
+    width: 40%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .left h1 {
+    font-size: 80px;
+    color: #be1717;
+}
+
+.hero .left p {
+    font-size: 18px;
+    margin: 10px 0 15px;
+}
+
+.hero .left button {
+    background: white;
+    font-size: 18px;
+    color: #be1717;
+    border: 1px solid #be1717;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero .right {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.hero .right img {
+    width: 550px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 70px 70px 0 #b31414;
+}
+
+.review {
+    margin: 150px 60px 100px;
+    background: #dfdbdb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.review img{
+    width: 1000px;
+}
+
+.review button{
+    background: #747070;
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    margin-left: 300px;
+}
+
+.review .info{
+    background: #be1717;
+    color: #fff;
+    padding: 50px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
